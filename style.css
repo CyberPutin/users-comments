@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assests/font/OpenSans-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assests/font/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assests/font/OpenSans-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assests/font/OpenSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assests/font/OpenSans-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #c9d1d9;
+  cursor: default;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+::placeholder {
+  color:#a8b3bd;
+}
+
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #0d1117;
+}
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.user-activ__form_data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.data-block {
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+}
+.data-input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  color: #c9d1d9;
+  background-color: #0d1117;
+  border-radius: 6px;
+  border: 1px #767b80 solid;
+}
+.data-input:focus {
+  border: 1px #ffffff solid;
+}
+.user-activ__form_data_name {
+  position: relative;
+}
+.user-activ__form_data_name__input {
+  cursor: text;
+}
+.user-activ__form_data_name__input_err {
+  border: 2px #fffFff solid;
+}
+.user-activ__form_data_name_err {
+  position: absolute;
+  visibility: hidden;
+  bottom: -20px;
+  max-height: 20px;
+  left: 0px;
+}
+.user-activ__form_data_name_err_txt {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.user-activ__form_data_name_err_visible {
+  visibility: visible;
+}
+.user-activ__form_data_date__input {
+  color: #a8b3bd; 
+  cursor: pointer;
+}
+.user-activ__form_content {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+.user-activ__form_content_text {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  border: #767b80 1px solid;
+  border-radius: 6px;
+  background-color: #0d1117;
+  cursor: text;
+}
+.user-activ__form_content_text_err {
+  border: #ffffff 2px solid;
+}
+.user-activ__form_content_text:focus {
+  /*box-shadow: inset 5px -5px 5px -5px rgba(255, 255, 255, 0.8);*/
+  border: #ffffff 1px solid;
+  outline: none;
+}
+.user-activ__form_content_err {
+  position: absolute;
+  visibility: hidden;
+  bottom: -15px;
+  max-height: 20px;
+  left: 0px;
+}
+.user-activ__form_content_err_txt {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.user-activ__form_content_err_visible {
+  visibility: visible;
+}
+.user-activ__form_btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.user-activ__form_btn_submit {
+  outline: 0px;
+  padding: 10px 20px;
+  width: 30%;
+  height: 50px;
+  white-space: nowrap;
+  color: #c9d1d9;
+  font-size: 16px;
+  background-color: #202833;
+  transition: all 0.5s;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.user-activ__form_btn_submit:hover {
+  background-color: #191e25;
+}
+
+.comments {
+  margin-top: 50px;
+}
+.comment-content {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  border-bottom: 1px #767b80 solid;
+}
+.comment-content_username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a2b2c0;
+  margin: 0px 0px 10px;
+  padding: 0px;
+  word-wrap: break-word;
+}
+.comment-content_opinion {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.comment-content_datetime {
+  color: #515c6d;
+  font-size: 12px;
+}
+.comment-like {
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  opacity: 0.8;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.comment-like:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+.comment-like_pic {
+  cursor: pointer;
+}
+.comment-delete {
+  position: absolute;
+  right: 20px;
+  bottom: 8px;
+  opacity: 0.8;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.comment-delete:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.comment-delete_pic {
+  cursor: pointer;
+}
